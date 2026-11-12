@@ -1,0 +1,66 @@
+================================================================================
+GIT COMMANDS DOCUMENTATION - SDP ASSIGNMENT
+Student / GitHub User: X-DIABLO-X
+================================================================================
+
+1. git init -b main
+   Initializes a new Git repository locally in the current directory with the default branch set to 'main'.
+
+2. git config --global user.name "<username>"
+   Configures the global Git username associated with all future commits made on this system.
+
+3. git config --global user.email "<email>"
+   Configures the global Git user email associated with all future commits made on this system.
+
+4. git status
+   Displays the working tree status, showing tracked, untracked, modified, and staged files.
+
+5. git add <file>
+   Stages a specific file from the working directory into the Git staging area for the next commit.
+
+6. git add .
+   Stages all new, modified, and deleted files across the entire workspace into the staging area.
+
+7. git commit -m "<message>"
+   Captures a permanent snapshot of all staged changes in the repository history with a descriptive message.
+
+8. git diff
+   Inspects line-by-line differences between modified files in the working directory and the staging area.
+
+9. git branch feature
+   Creates a new branch named 'feature' pointing to the current commit without switching to it.
+
+10. git checkout feature
+    Switches the active working directory and HEAD pointer to the 'feature' branch.
+
+11. git checkout main
+    Switches the active working directory and HEAD pointer back to the primary 'main' branch.
+
+12. git merge --no-ff feature -m "<message>"
+    Merges the 'feature' branch into 'main', using --no-ff to create a dedicated merge commit preserving history.
+
+13. git log --graph --oneline --all
+    Displays an ASCII graph of all commits, branch forks, and merges in a compact single-line format.
+
+14. git check-ignore -v <path>
+    Verifies which rule inside the .gitignore file is causing a specific file or folder to be ignored.
+
+15. git reset HEAD~1
+    Undoes the most recent commit locally by rewinding HEAD by one commit, leaving file changes unstaged.
+
+16. git revert HEAD --no-edit
+    Undoes the previous commit by automatically creating a new inverse commit, preserving shared repository history.
+
+17. git remote add origin <url>
+    Binds the local repository to a remote repository hosted on GitHub under the alias 'origin'.
+
+18. git remote -v
+    Displays the URLs and aliases of all configured remote repositories for both fetch and push operations.
+
+19. git push -u origin main
+    Pushes local 'main' branch commits to GitHub and establishes upstream tracking for subsequent pulls/pushes.
+
+20. git push origin feature
+    Pushes the local 'feature' branch to GitHub so branch development history is fully visible on the remote.
+
+================================================================================
